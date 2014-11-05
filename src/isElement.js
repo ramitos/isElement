@@ -1,7 +1,10 @@
 var type = require('type')
-var isFn = (type(HTMLElement) === 'function')
 
 module.exports = function (el) {
-  if(isFn) return (el instanceof HTMLElement)
+  var element = HTMLElement
+    ? HTMLElement
+    : Element
+
+  if(type(element) === 'function') return (el instanceof element)
   return type(el) === 'element' && type(el.nodeName) === 'string'
 }
