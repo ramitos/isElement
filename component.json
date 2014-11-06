@@ -1,6 +1,6 @@
 {
   "name": "isElement",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "check if a value is an element",
   "repo": "ramitos/isElement",
   "keywords": ["documet", "isElement"],
